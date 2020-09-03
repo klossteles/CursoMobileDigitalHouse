@@ -1,2 +1,2 @@
-# CursoMobileDigitalHouse
-Repositório para os exercícios desenvolvidos durante o curso de mobile da Digital House
+#Curso Desenvolvimento Mobile 
+Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital House
