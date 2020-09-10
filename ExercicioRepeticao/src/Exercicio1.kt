@@ -11,5 +11,4 @@ fun main () {
     } else {
         print("Número de notas inválido.")
     }
-
 }
