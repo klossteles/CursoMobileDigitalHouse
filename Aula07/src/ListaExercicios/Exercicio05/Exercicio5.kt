@@ -10,6 +10,6 @@ fun main () {
         println("Cliente: ${venda.cliente.nomeCompleto}")
         println("Contato cliente: ${venda.cliente.contato}")
         println("Valor: R\$${"%.2f".format(venda.valorDaVenda)}")
-        println("Veiculo: ${venda.veiculoVendido.marca} - ${venda.veiculoVendido.modelo}/${venda.veiculoVendido.anoFabricacao} ${venda.veiculoVendido.cor}")
+        println("Veículo: ${venda.veiculoVendido.marca} - ${venda.veiculoVendido.modelo}/${venda.veiculoVendido.anoFabricacao} ${venda.veiculoVendido.cor}")
     }
 }

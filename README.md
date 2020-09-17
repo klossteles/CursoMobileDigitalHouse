@@ -12,3 +12,4 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula05** - Kotlin Sequencial  
 - **Aula06** - Kotlin Loop  
 - **Aula07** - Classes e Construtores  
+- **Aula08** - Herança e modificadores de visibilidade
