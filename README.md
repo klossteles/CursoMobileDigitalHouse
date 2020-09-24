@@ -13,3 +13,7 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula06** - Kotlin Loop  
 - **Aula07** - Classes e Construtores  
 - **Aula08** - Herança e modificadores de visibilidade
+- **Aula09** - Interfaces    
+- **Aula10** - Equals, Hashcode, ToString e Data Class 
+- **Aula11** - Exceções  
+- **Aula12** - Collections  
