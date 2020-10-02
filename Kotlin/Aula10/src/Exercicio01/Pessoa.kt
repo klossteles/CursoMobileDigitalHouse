@@ -1,4 +1,4 @@
-package Exercicio01
+package exercicio01
 
 class Pessoa (val nome: String, val rg: Int) {
     override fun equals(other: Any?): Boolean {

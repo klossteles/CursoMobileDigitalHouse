@@ -1,4 +1,4 @@
-package Exercicio02
+package exercicio02
 
 fun main() {
     val cocaZero = Coca(350, 2.50)

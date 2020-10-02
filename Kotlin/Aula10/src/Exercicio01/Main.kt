@@ -1,4 +1,4 @@
-package Exercicio01
+package exercicio01
 
 fun main () {
     val pessoa1 = Pessoa("Lucas Kloss", 1)

@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio04
+package listaExercicios.Exercicio04
 
 fun main () {
     val meuFusca = Carro(15.0)

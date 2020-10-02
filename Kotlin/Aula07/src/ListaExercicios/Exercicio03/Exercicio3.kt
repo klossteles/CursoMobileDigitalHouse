@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio03
+package listaExercicios.Exercicio03
 
 fun main() {
     var atleta1 = Atleta("Neymar",91, 81)

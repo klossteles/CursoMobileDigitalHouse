@@ -1,4 +1,4 @@
-package Exercicio03
+package exercicio03
 
 class CalculoMatematico {
     fun divisao(numerador:Int, divisor: Int): Int {

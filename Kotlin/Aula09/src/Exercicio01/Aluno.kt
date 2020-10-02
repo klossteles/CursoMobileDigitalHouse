@@ -1,4 +1,4 @@
-package Exercicio01
+package exercicio01
 
 class Aluno(registro: String, nome: String, sobrenome: String): Pessoa(nome, registro) {
     var nomeCompleto: String

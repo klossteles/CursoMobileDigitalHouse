@@ -1,4 +1,4 @@
-package Exercicio02
+package exercicio02
 
 class Fatura() {
     val itens = ArrayList<Item>()

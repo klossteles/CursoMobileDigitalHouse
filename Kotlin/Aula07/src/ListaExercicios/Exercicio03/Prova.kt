@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio03
+package listaExercicios.Exercicio03
 
 class Prova(var dificuldade: Int, var energiaNecessaria: Int) {
     fun realizarProva(atleta: Atleta): Boolean {

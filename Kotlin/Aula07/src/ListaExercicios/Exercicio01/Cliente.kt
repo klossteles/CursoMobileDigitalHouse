@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio01
+package listaExercicios.Exercicio01
 
 class Cliente (nome: String, sobrenome: String) {
     val nomeCompleto: String

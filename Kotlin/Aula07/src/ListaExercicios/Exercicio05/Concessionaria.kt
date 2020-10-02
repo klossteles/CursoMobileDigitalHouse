@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio5
+package listaExercicios.Exercicio5
 
 class Concessionaria {
     var vendas = ArrayList<Venda>()

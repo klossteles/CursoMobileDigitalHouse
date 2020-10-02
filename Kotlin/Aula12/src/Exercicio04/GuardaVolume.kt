@@ -1,4 +1,4 @@
-package Exercicio04
+package exercicio04
 
 class GuardaVolume {
     val dicionario = mutableMapOf<Int, List<Peca>>()

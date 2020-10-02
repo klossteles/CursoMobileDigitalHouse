@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio02
+package listaExercicios.Exercicio02
 
 class SessaoDeTreinamento {
     var experiencia: Int = 0

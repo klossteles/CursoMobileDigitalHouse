@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio5
+package listaExercicios.Exercicio5
 
 fun main () {
     val carro = Veiculo("Renault", "Sandero", 2015, "Branca", 39000)

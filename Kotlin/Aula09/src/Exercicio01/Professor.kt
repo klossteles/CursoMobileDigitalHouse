@@ -1,4 +1,4 @@
-package Exercicio01
+package exercicio01
 
 class Professor(nome: String, registro: String ): Pessoa(nome, registro) {
     override val podeDarAula: Boolean

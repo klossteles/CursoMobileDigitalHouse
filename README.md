@@ -20,3 +20,4 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula13** - Desafio Kotlin  
 - **Aula14** - Metodologia Ágil  
 - **Aula15** - Introdução a android e xml  
+- **Aula16** - Activity, Ciclo de Vida de Activity

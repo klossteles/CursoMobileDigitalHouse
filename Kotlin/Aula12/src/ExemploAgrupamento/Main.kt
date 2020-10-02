@@ -1,4 +1,4 @@
-package ExemploAgrupamento
+package exemploAgrupamento
 
 fun main () {
     val pessoas = mutableListOf<Pessoa>()

@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio02
+package listaExercicios.Exercicio02
 
 class JogadorDeFutebol(nome: String, var energia: Int, var alegria: Int, var experiencia: Int) {
     var gols: Int = 0

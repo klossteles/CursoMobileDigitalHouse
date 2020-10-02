@@ -1,4 +1,4 @@
-package Exercicio01
+package exercicio01
 
 fun main () {
     val curso = Curso("Mobile Android", cadastrarProfessor("Felipe", "01"))

@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio02
+package listaExercicios.Exercicio02
 
 fun main() {
     val jogador1 = JogadorDeFutebol("Ronaldinho", 100, 100, 70)

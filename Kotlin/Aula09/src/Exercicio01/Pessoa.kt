@@ -1,4 +1,4 @@
-package Exercicio01
+package exercicio01
 
 open class Pessoa(val nome: String, val registro: String) {
     open val podeFazerLicao get() = false

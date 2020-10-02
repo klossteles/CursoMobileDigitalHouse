@@ -1,4 +1,4 @@
-package Exercicio03
+package exercicio03
 
 class Prova {
     fun somaTotal(conjuntoDeInteiros: MutableSet<Int>){

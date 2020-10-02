@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio01
+package listaExercicios.Exercicio01
 
 class Conta(numeroConta: Int, val titular: Cliente) {
     var saldo: Double = 0.0

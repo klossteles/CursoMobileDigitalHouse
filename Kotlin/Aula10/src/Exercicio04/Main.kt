@@ -1,4 +1,4 @@
-package Exercicio04
+package exercicio04
 
 fun main () {
     val funcionarios = ArrayList<Funcionario>()

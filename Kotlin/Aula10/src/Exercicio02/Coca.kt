@@ -1,4 +1,4 @@
-package Exercicio02
+package exercicio02
 
 class Coca(val tamanho: Int, val preco:Double) {
     override fun equals(other: Any?): Boolean {

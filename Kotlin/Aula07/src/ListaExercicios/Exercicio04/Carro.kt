@@ -1,4 +1,4 @@
-package ListaExercicios.Exercicio04
+package listaExercicios.Exercicio04
 
 class Carro(val consumo:Double) {
     var combustivelTanque: Double = 0.0

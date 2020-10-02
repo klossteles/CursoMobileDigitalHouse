@@ -1,6 +1,4 @@
-package ExemploAgrupamento
-
-import ExemploAgrupamento.Estado
+package exemploAgrupamento
 
 data class Pessoa(val nome: String, val estado: Estado) {
     override fun toString(): String {

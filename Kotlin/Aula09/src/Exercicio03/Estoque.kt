@@ -1,4 +1,4 @@
-package Exercicio03
+package exercicio03
 
 import kotlin.math.max
 

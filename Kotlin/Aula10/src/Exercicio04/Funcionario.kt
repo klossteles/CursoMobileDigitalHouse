@@ -1,4 +1,4 @@
-package Exercicio04
+package exercicio04
 
 class Funcionario (val nome:String, val numeroDeRegistro:Int) {
     override fun equals(other: Any?): Boolean {

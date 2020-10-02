@@ -1,4 +1,4 @@
-package ExemploAgrupamento
+package exemploAgrupamento
 
 data class Estado(val sigla: String, val nome: String) {
     override fun toString(): String {

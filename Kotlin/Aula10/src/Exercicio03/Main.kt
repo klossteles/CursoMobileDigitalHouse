@@ -1,4 +1,4 @@
-package Exercicio03
+package exercicio03
 
 fun main () {
     val alunos = ArrayList<Aluno>()
