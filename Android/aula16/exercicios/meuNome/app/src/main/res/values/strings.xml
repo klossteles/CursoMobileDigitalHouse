@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Meu Nome</string>
+    <string name="show">Exibir</string>
+    <string name="myNameIs">Meu nome é\n%1$s</string>
+    <string name="placeYourName">Digite seu nome</string>
+    <string name="name">Nome</string>
+</resources>
