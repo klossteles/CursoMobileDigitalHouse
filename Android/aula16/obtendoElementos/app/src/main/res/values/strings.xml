@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ObetendoElementos</string>
+    <string name="type_a_number">Digite um número</string>
+    <string name="calculate">Calcular</string>
+    <string name="message_odd">%d é par</string>
+    <string name="message_even">%.2f é ímpar</string>
+</resources>
