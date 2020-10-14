@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:layout_marginHorizontal="20dp"
+    android:layout_margin="20dp"
     android:orientation="vertical">
 
     <TextView
@@ -23,7 +22,8 @@
         android:layout_height="wrap_content"
         android:hint="@string/digite_a_temperatura"
         android:inputType="number"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:autofillHints="@string/digite_a_temperatura" />
 
     <Button
         android:id="@+id/btnConvert"
@@ -33,7 +33,8 @@
         android:text="@string/btn_converter"
         android:background="@color/btnConverterColor"
         android:textColor="@color/colorWhite"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"/>
 
     <TextView
         android:id="@+id/txtVTemperatureConverted"
@@ -44,7 +45,9 @@
         android:textSize="40sp"
         android:textStyle="bold"
         android:textColor="@color/colorBlack"
+        android:textAlignment="center"
         android:layout_marginTop="100dp"
-        android:visibility="invisible"/>
+        android:visibility="gone"
+        tools:visibility="invisible"/>
 
 </LinearLayout>
