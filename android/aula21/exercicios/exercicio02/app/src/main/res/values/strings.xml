@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Exercicio02</string>
+    <string name="clica">clica</string>
+    <string name="name">Nome</string>
+    <string name="year">Ano</string>
+    <string name="calculate">Calcular</string>
+    <string name="name_cannot_be_empty">Name cannot be empty</string>
+    <string name="year_cannot_be_empty">Year cannot be empty</string>
+    <string name="ainda_nao_nasceu">%1$s ainda não nasceu</string>
+
+    <plurals name="nameAndYear">
+        <item quantity="one">%2$s, você tem %1$d ano</item>
+        <item quantity="other">%2$s, você tem %1$d anos</item>
+    </plurals>
+</resources>
