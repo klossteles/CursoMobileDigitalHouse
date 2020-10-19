@@ -3,16 +3,19 @@ package com.digitalhouse.fakeloginapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.digitalhouse.fakeloginapp.users.UserService
+import com.google.android.material.snackbar.Snackbar
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     private val btnSignUp by lazy { findViewById<Button>(R.id.btnSignUp) }
     private val btnLogIn by lazy { findViewById<Button>(R.id.btnLogIn) }
-    private val edtEmail by lazy { findViewById<EditText>(R.id.edtEmail) }
-    private val edtPassword by lazy { findViewById<EditText>(R.id.edtPassword) }
+//    private val edtEmail by lazy { findViewById<EditText>(R.id.edtEmail) }
+//    private val edtPassword by lazy { findViewById<EditText>(R.id.edtPassword) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,13 +35,13 @@ class MainActivity : AppCompatActivity() {
     private fun logIn() {
         btnLogIn.setOnClickListener {
             var success = true
-            val email = edtEmail.text.toString()
+            val email = edtEmail.editText?.text.toString()
             if (email.isEmpty()) {
                 edtEmail.error = getString(R.string.insert_email)
                 success = false
             }
 
-            val password = edtPassword.text.toString()
+            val password = edtPassword.editText?.text.toString()
             if (password.isEmpty()) {
                 edtEmail.error = getString(R.string.insert_password)
                 success = false
@@ -50,7 +53,8 @@ class MainActivity : AppCompatActivity() {
 
             val user = UserService.logIn(email, password)
             if (user == null) {
-                Toast.makeText(this, getString(R.string.user_not_found), Toast.LENGTH_SHORT).show()
+                val contextView = findViewById<View>(R.id.mainLayout)
+                Snackbar.make(contextView, getString(R.string.user_not_found), Snackbar.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
 

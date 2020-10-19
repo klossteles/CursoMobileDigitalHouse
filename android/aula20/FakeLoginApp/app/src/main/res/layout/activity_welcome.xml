@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/colorWhite"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:id="@+id/coordinatorLayout">
 
     <TextView
         android:layout_width="wrap_content"
@@ -35,4 +37,13 @@
         tools:visibility="visible"
         android:textAlignment="center"/>
 
-</LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnFloating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/dimen_16dp"
+        app:srcCompat="@drawable/ic_plus_24"
+        app:fabSize="mini"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
