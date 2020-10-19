@@ -23,3 +23,6 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula16** - Activity, Ciclo de Vida de Activity
 - **Aula17** - Projeto Integrador  
 - **Aula18** - Ux/Ui
+- **Aula19** - Activity  
+- **Aula20** - Material  
+- **Aula21** - Fragments 
