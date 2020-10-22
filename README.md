@@ -26,4 +26,5 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula19** - Activity  
 - **Aula20** - Material  
 - **Aula21** - Fragments  
-- **Aula22** - RecyclerView & sprint 0 
+- **Aula22** - RecyclerView & sprint 0  
+- **Aula23** - RecyclerView II
