@@ -28,3 +28,5 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula21** - Fragments  
 - **Aula22** - RecyclerView & sprint 0  
 - **Aula23** - RecyclerView II
+- **Aula24** - Viewpager  
+- **Aula25** - Splashscreen  
