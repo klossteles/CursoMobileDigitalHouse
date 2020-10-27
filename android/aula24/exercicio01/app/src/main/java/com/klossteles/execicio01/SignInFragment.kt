@@ -29,37 +29,42 @@ class SignInFragment : Fragment() {
             }
         }
 
-        minhaView.findViewById<TextInputEditText>(R.id.edtUsernameSignIn).addTextChangedListener(object :
-            TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                minhaView.findViewById<TextInputLayout>(R.id.txtUsernameSignIn).error = ""
-            }
-        })
-
-        minhaView.findViewById<TextInputEditText>(R.id.edtPasswordSigIn).addTextChangedListener(object :
-            TextWatcher {
-            override fun afterTextChanged(s: Editable?) {
-            }
-
-            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-            }
-
-            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                minhaView.findViewById<TextInputLayout>(R.id.txtPasswordSignIn).error = ""
-            }
-        })
+        checkUsernameChanged()
+        checkPasswordChanged()
 
         minhaView.findViewById<Button>(R.id.btnSignUpSignIn).setOnClickListener {
             mudarTabListener.mudarTab(SIGN_IN_FRAGMENT)
         }
 
         return minhaView
+    }
+
+    private fun checkPasswordChanged() {
+        minhaView.findViewById<TextInputEditText>(R.id.edtPasswordSignIn)
+            .addTextChangedListener(object :
+                TextWatcher {
+                override fun afterTextChanged(s: Editable?) { }
+
+                override fun beforeTextChanged( s: CharSequence?, start: Int, count: Int, after: Int ) { }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    minhaView.findViewById<TextInputLayout>(R.id.txtPasswordSignIn).error = ""
+                }
+            })
+    }
+
+    private fun checkUsernameChanged() {
+        minhaView.findViewById<TextInputEditText>(R.id.edtUsernameSignIn)
+            .addTextChangedListener(object :
+                TextWatcher {
+                override fun afterTextChanged(s: Editable?) { }
+
+                override fun beforeTextChanged( s: CharSequence?, start: Int, count: Int, after: Int ) { }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    minhaView.findViewById<TextInputLayout>(R.id.txtUsernameSignIn).error = ""
+                }
+            })
     }
 
     override fun onAttach(context: Context) {
@@ -70,7 +75,7 @@ class SignInFragment : Fragment() {
     fun validaEntradas(view: View): Boolean {
         var resultado = true
         val edtUsername = view.findViewById<TextInputEditText>(R.id.edtUsernameSignIn)
-        val edtPassword = view.findViewById<TextInputEditText>(R.id.edtPasswordSigIn)
+        val edtPassword = view.findViewById<TextInputEditText>(R.id.edtPasswordSignIn)
 
         if (edtUsername.text?.trim()!!.isBlank()) {
             view.findViewById<TextInputLayout>(R.id.txtUsernameSignIn).error = "Username vazio"
@@ -87,7 +92,8 @@ class SignInFragment : Fragment() {
     fun usernameAlterado(username: String){
         val edtUsernameSignIn = minhaView.findViewById<TextInputEditText>(R.id.edtUsernameSignIn)
         edtUsernameSignIn.setText(username)
-        val edtPassword = minhaView.findViewById<TextInputEditText>(R.id.edtPasswordSigIn)
+        val edtPassword = minhaView.findViewById<TextInputEditText>(R.id.edtPasswordSignIn)
         edtPassword.requestFocus()
+        edtPassword.setText("")
     }
 }

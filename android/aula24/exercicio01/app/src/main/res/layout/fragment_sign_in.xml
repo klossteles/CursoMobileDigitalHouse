@@ -45,7 +45,7 @@
         app:layout_constraintTop_toBottomOf="@id/txtUsernameSignIn">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtPasswordSigIn"
+            android:id="@+id/edtPasswordSignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword" />
