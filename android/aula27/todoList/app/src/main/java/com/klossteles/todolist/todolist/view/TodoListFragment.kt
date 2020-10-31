@@ -119,7 +119,9 @@ class TodoListFragment : Fragment() {
                 edtNewTask.error = "Insert task description"
                 return@setOnClickListener
             }
-            Toast.makeText(context, desc, Toast.LENGTH_LONG).show()
+
+            viewModel.addNewTask(TaskModel(desc))
+            Toast.makeText(context, "Task added to Todo List", Toast.LENGTH_LONG).show()
             dialog.dismiss()
         }
     }

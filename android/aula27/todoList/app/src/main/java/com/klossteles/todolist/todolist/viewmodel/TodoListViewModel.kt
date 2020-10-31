@@ -17,6 +17,10 @@ class TodoListViewModel(
         }
     }
 
+    fun addNewTask(task: TaskModel) {
+        repository.addTask(task)
+    }
+
     class ListTodoListViewModelFactory(
         private val repository: TaskRepository
     ): ViewModelProvider.Factory {

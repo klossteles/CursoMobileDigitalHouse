@@ -12,4 +12,8 @@ class TaskRepository() {
     fun getTasksList(): MutableList<TaskModel> {
         return tasks
     }
+
+    fun addTask(task: TaskModel) {
+        tasks.add(task)
+    }
 }
