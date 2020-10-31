@@ -7,18 +7,18 @@
     tools:context=".todolist.view.TodoListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/lista"
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAddNew"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddNewTask"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnAddNew"
+        android:id="@+id/btnAddNewTask"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
