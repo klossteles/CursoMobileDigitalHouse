@@ -16,4 +16,8 @@ class TaskRepository() {
     fun addTask(task: TaskModel) {
         tasks.add(task)
     }
+
+    fun deleteTask(task: TaskModel) {
+        tasks.remove(task)
+    }
 }
