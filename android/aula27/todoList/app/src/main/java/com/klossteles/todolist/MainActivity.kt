@@ -1,9 +1,9 @@
-package com.klossteles.todolist.todolist.view
+package com.klossteles.todolist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
-import com.klossteles.todolist.R
+import com.klossteles.todolist.todolist.view.TodoListFragment
 
 class MainActivity : AppCompatActivity() {
     private lateinit var manager: FragmentManager
