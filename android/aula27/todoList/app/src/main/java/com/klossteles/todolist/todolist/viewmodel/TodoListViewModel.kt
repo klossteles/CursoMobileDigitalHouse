@@ -17,8 +17,16 @@ class TodoListViewModel(
         }
     }
 
-    fun addNewTask(task: TaskModel) {
-        repository.addTask(task)
+    fun addNewTask(task: TaskModel): String {
+        return repository.addTask(task)
+    }
+
+    fun deleteTask(task: TaskModel):Boolean {
+        return repository.deleteTask(task)
+    }
+
+    fun updateTaskStatus(task: TaskModel, status: Boolean) {
+        repository.updateTaskStatus(task, status)
     }
 
     class ListTodoListViewModelFactory(

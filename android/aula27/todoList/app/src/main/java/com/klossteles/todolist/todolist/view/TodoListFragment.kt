@@ -50,7 +50,7 @@ class TodoListFragment : Fragment() {
         val recyclerView = minhaView.findViewById<RecyclerView>(R.id.list)
         val manager = LinearLayoutManager(context)
 
-        val customAdapter = TodoListAdapter(tasks) {
+        val customAdapter = TodoListAdapter(tasks, viewModel) {
 
         }
 
@@ -121,9 +121,13 @@ class TodoListFragment : Fragment() {
                 return@setOnClickListener
             }
 
-            viewModel.addNewTask(TaskModel(desc))
-            Toast.makeText(context, "Task added to Todo List", Toast.LENGTH_LONG).show()
-            dialog.dismiss()
+            val response = viewModel.addNewTask(TaskModel(desc))
+            if (response.isEmpty()) {
+                Toast.makeText(context, "Task added to Todo List", Toast.LENGTH_LONG).show()
+                dialog.dismiss()
+            } else {
+                Toast.makeText(context, response, Toast.LENGTH_LONG).show()
+            }
         }
     }
 }
