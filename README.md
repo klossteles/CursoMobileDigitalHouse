@@ -32,3 +32,4 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula25** - Splashscreen  
 - **Aula26** - Arquitetura  
 - **Aula27** - Arquiteture - Parte prática  
+- **Aula28** - Ciclo de vida  
