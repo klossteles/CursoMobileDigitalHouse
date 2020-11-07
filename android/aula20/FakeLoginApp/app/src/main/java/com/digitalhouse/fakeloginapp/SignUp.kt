@@ -10,7 +10,7 @@ import com.digitalhouse.fakeloginapp.users.UserService
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUp : AppCompatActivity() {
-//    private val edtNameSignUp by lazy { findViewById<EditteEditText>(R.id.edtNameSignUp) }
+//    private val edtNameSignUp by lazy { findViewById<EditText>(R.id.edtNameSignUp) }
 //    private val edtEmailSignUp by lazy { findViewById<EditText>(R.id.edtEmailSignUp) }
 //    private val edtPasswordSignUp by lazy { findViewById<EditText>(R.id.edtPasswordSignUp) }
     private val ckPrivacyPolicy by lazy { findViewById<CheckBox>(R.id.ckPrivacyPolicy) }

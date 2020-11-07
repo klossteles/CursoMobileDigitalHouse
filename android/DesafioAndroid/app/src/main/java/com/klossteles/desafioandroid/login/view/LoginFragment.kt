@@ -1,4 +1,4 @@
-package com.klossteles.desafioandroid
+package com.klossteles.desafioandroid.login.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,15 +7,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.NavigationUI
+import com.klossteles.desafioandroid.R
 
-class MainFragment : Fragment() {
+class LoginFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main, container, false)
+        return inflater.inflate(R.layout.fragment_login, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -26,8 +26,8 @@ class MainFragment : Fragment() {
 
         }
 
-        view.findViewById<Button>(R.id.btnRegister).setOnClickListener {
-            navController.navigate(R.id.registerFragment)
+        view.findViewById<Button>(R.id.btnRegisterLogin).setOnClickListener {
+            navController.navigate(R.id.action_loginFragment_to_registerFragment)
         }
     }
 

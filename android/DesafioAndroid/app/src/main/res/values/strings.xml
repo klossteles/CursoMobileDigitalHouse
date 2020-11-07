@@ -7,4 +7,9 @@
     <string name="register">Register</string>
     <string name="name">Name</string>
     <string name="repeat_password">Repeat password</string>
+    <string name="insert_name">Insira um nome</string>
+    <string name="insert_email">Insert email</string>
+    <string name="password_cannot_be_null">Password cannot be null</string>
+    <string name="must_contain_at_least_6_characters">Must contain at least 6 characters</string>
+    <string name="must_be_the_same_as_password">Must be the same as password</string>
 </resources>

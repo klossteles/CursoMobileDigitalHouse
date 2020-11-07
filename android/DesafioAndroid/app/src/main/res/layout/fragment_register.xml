@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".RegisterFragment"
+    tools:context=".register.view.RegisterFragment"
     android:layout_marginHorizontal="@dimen/dimen_24dp">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -59,7 +59,7 @@
             android:id="@+id/edtPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -77,10 +77,11 @@
             android:id="@+id/edtRepeatPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"/>
+            android:inputType="textPassword"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+        android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/color_red"
