@@ -6,9 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
     android:layout_marginHorizontal="@dimen/dimen_20dp"
-    android:id="@+id/mainLayout">
+    android:layout_marginVertical="@dimen/dimen_20dp">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/txtEmailLogin"
