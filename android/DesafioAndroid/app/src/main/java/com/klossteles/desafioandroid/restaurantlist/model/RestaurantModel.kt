@@ -1,4 +1,4 @@
-package com.klossteles.desafioandroid.restaurants.model
+package com.klossteles.desafioandroid.restaurantlist.model
 
 import java.sql.Time
 

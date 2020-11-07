@@ -15,6 +15,13 @@
             app:exitAnim="@anim/to_left"
             app:popEnterAnim="@anim/from_left"
             app:popExitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_loginFragment_to_restaurantsListFragment"
+            app:destination="@id/restaurantsListFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
@@ -26,5 +33,17 @@
             app:destination="@id/loginFragment"
             app:enterAnim="@anim/from_left"
             app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_registerFragment_to_restaurantsListFragment"
+            app:destination="@id/restaurantsListFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
+    <fragment
+        android:id="@+id/restaurantsListFragment"
+        android:name="com.klossteles.desafioandroid.restaurantlist.view.RestaurantsListFragment"
+        android:label="fragment_restaurants_list"
+        tools:layout="@layout/fragment_restaurants_list" />
 </navigation>
