@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import com.klossteles.desafioandroid.R
@@ -48,6 +49,11 @@ class RegisterFragment : Fragment() {
             val password = view.findViewById<TextInputEditText>(R.id.edtPasswordRegister)?.text.toString()
             success = checkPassword(password, view, success)
             success = checkRepeatPassword(view, password, success)
+
+            if (success) {
+                val navController = findNavController()
+                navController.navigate(R.id.action_registerFragment_to_restaurantsListFragment)
+            }
         }
     }
 
