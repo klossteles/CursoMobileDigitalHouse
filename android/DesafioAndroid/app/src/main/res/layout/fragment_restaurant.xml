@@ -1,48 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".restaurant.view.RestaurantFragment">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:id="@+id/imgRestaurant"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_200dp"
-        android:contentDescription="@string/meal_image"
-        android:scaleType="fitXY"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@drawable/meal" />
-
-    <TextView
-        android:id="@+id/txtRestaurantName"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/dimen_10dp"
-        android:textColor="@color/color_white"
-        android:textSize="@dimen/dimen_36sp"
-        android:layout_marginBottom="@dimen/dimen_10dp"
-        app:layout_constraintBottom_toBottomOf="@id/imgRestaurant"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:fontFamily="@font/roboto_medium"
-        tools:text="Tony Roma's" />
+        tools:context=".restaurant.view.RestaurantFragment">
 
-    <TextView
-        android:id="@+id/txtPrincipalMeals"
+        <ImageView
+            android:id="@+id/imgRestaurant"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_200dp"
+            android:contentDescription="@string/meal_image"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/meal" />
+
+        <TextView
+            android:id="@+id/txtRestaurantName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_10dp"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/dimen_36sp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            app:layout_constraintBottom_toBottomOf="@id/imgRestaurant"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/roboto_medium"
+            tools:text="Tony Roma's" />
+
+        <TextView
+            android:id="@+id/txtPrincipalMeals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/principal_meals"
+            android:textColor="@color/color_dark_gray"
+            android:textSize="@dimen/dimen_36sp"
+            android:layout_marginVertical="@dimen/dimen_20dp"
+            android:layout_marginHorizontal="@dimen/dimen_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgRestaurant" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mealListFragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/principal_meals"
-        android:textColor="@color/color_dark_gray"
-        android:textSize="@dimen/dimen_36sp"
-        android:layout_marginVertical="@dimen/dimen_20dp"
-        android:layout_marginHorizontal="@dimen/dimen_10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgRestaurant" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_weight="1"/>
+</LinearLayout>

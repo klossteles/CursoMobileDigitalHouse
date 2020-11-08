@@ -9,6 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.klossteles.desafioandroid.R
+import com.klossteles.desafioandroid.meallist.view.MealListFragment
 import com.klossteles.desafioandroid.restaurantlist.view.RestaurantsListFragment
 
 class RestaurantFragment : Fragment() {
@@ -28,6 +29,9 @@ class RestaurantFragment : Fragment() {
         if (restaurantImage != null) {
             val imageDrawable = ContextCompat.getDrawable(view.context, restaurantImage)
             view.findViewById<ImageView>(R.id.imgRestaurant).setImageDrawable(imageDrawable)
+            val transaction = childFragmentManager.beginTransaction()
+            transaction.replace(R.id.mealListFragmentContainer, MealListFragment())
+            transaction.commit()
         }
     }
 

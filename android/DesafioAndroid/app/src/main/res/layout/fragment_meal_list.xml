@@ -7,7 +7,7 @@
     tools:context=".meallist.view.MealListFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/restaurantList"
+        android:id="@+id/mealList"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/dimen_20dp"
