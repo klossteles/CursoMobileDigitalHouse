@@ -30,6 +30,7 @@ class LoginFragment : Fragment() {
         onLogin(view)
         onRegister(view, navController)
         checkEmailChanged(view)
+        checkPasswordChanged(view)
     }
 
     private fun onLogin(view: View) {
@@ -81,5 +82,21 @@ class LoginFragment : Fragment() {
             isOk = false
         }
         return isOk
+    }
+
+    private fun checkPasswordChanged(view: View) {
+        view.findViewById<TextInputEditText>(R.id.edtPasswordLogin)
+            .addTextChangedListener(object :
+                TextWatcher {
+                override fun afterTextChanged(s: Editable?) { }
+
+                override fun beforeTextChanged( s: CharSequence?, start: Int, count: Int, after: Int ) { }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                    view.findViewById<TextInputLayout>(R.id.txtPasswordLogin).error = ""
+                    val password = view.findViewById<TextInputEditText>(R.id.edtPasswordLogin)?.text.toString()
+                    checkPassword(password, view, true)
+                }
+            })
     }
 }
