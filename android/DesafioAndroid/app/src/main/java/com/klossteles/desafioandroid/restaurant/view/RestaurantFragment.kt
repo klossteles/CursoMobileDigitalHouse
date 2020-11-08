@@ -9,8 +9,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.klossteles.desafioandroid.R
-import com.klossteles.desafioandroid.meallist.view.MealListFragment
-import com.klossteles.desafioandroid.restaurantlist.view.RestaurantsListFragment
+import com.klossteles.desafioandroid.meal.view.MealListFragment
 
 class RestaurantFragment : Fragment() {
 
@@ -24,7 +23,8 @@ class RestaurantFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        view.findViewById<TextView>(R.id.txtRestaurantName).text = arguments?.getString(RestaurantsListFragment.RESTAURANT_NAME)
+        view.findViewById<TextView>(R.id.txtRestaurantName).text = arguments?.getString(
+            RestaurantsListFragment.RESTAURANT_NAME)
         val restaurantImage = arguments?.getInt(RestaurantsListFragment.RESTAURANT_IMAGE)
         if (restaurantImage != null) {
             val imageDrawable = ContextCompat.getDrawable(view.context, restaurantImage)

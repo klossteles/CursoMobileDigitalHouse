@@ -1,4 +1,4 @@
-package com.klossteles.desafioandroid.meallist.view
+package com.klossteles.desafioandroid.meal.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.klossteles.desafioandroid.R
 import com.klossteles.desafioandroid.meal.model.MealModel
 import com.klossteles.desafioandroid.meal.repository.MealRepository
-import com.klossteles.desafioandroid.meallist.viewModel.MealListViewModel
+import com.klossteles.desafioandroid.meal.viewModel.MealListViewModel
 
 class MealListFragment : Fragment() {
     lateinit var minhaView: View

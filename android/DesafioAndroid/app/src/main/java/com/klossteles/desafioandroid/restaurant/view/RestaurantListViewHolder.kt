@@ -1,4 +1,4 @@
-package com.klossteles.desafioandroid.restaurantlist.view
+package com.klossteles.desafioandroid.restaurant.view
 
 import android.view.View
 import android.widget.ImageView

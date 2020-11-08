@@ -1,4 +1,4 @@
-package com.klossteles.desafioandroid.meallist.view
+package com.klossteles.desafioandroid.meal.view
 
 import android.view.View
 import android.widget.ImageView

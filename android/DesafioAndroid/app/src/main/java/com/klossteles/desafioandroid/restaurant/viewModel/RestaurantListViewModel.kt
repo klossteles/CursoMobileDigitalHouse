@@ -1,4 +1,4 @@
-package com.klossteles.desafioandroid.restaurantlist.viewModel
+package com.klossteles.desafioandroid.restaurant.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

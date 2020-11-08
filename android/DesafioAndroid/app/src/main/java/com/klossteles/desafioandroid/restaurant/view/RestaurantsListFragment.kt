@@ -1,4 +1,4 @@
-package com.klossteles.desafioandroid.restaurantlist.view
+package com.klossteles.desafioandroid.restaurant.view
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.klossteles.desafioandroid.R
 import com.klossteles.desafioandroid.restaurant.model.RestaurantModel
 import com.klossteles.desafioandroid.restaurant.repository.RestaurantRepository
-import com.klossteles.desafioandroid.restaurantlist.viewModel.RestaurantListViewModel
+import com.klossteles.desafioandroid.restaurant.viewModel.RestaurantListViewModel
 
 class RestaurantsListFragment : Fragment() {
     lateinit var minhaView: View

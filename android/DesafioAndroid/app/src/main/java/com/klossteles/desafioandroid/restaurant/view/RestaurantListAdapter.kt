@@ -1,8 +1,7 @@
-package com.klossteles.desafioandroid.restaurantlist.view
+package com.klossteles.desafioandroid.restaurant.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.klossteles.desafioandroid.R
 import com.klossteles.desafioandroid.restaurant.model.RestaurantModel
