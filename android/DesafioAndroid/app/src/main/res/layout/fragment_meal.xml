@@ -4,11 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".restaurant.view.RestaurantFragment">
+    android:layout_height="wrap_content"
+    tools:context=".meal.view.MealFragment">
 
     <ImageView
-        android:id="@+id/imgRestaurant"
+        android:id="@+id/imgMeal"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dimen_200dp"
         android:contentDescription="@string/meal_image"
@@ -19,30 +19,32 @@
         tools:srcCompat="@drawable/meal" />
 
     <TextView
-        android:id="@+id/txtRestaurantName"
+        android:id="@+id/txtMealName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/dimen_10dp"
         android:textColor="@color/color_white"
-        android:textSize="@dimen/dimen_36sp"
+        android:textSize="@dimen/dimen_30sp"
         android:layout_marginBottom="@dimen/dimen_10dp"
-        app:layout_constraintBottom_toBottomOf="@id/imgRestaurant"
+        app:layout_constraintBottom_toBottomOf="@id/imgMeal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:fontFamily="@font/roboto_medium"
-        tools:text="Tony Roma's" />
+        tools:text="Salada com molho Gengibre" />
 
     <TextView
-        android:id="@+id/txtPrincipalMeals"
+        android:id="@+id/txtDescriptionMeal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/principal_meals"
-        android:textColor="@color/color_dark_gray"
-        android:textSize="@dimen/dimen_36sp"
-        android:layout_marginVertical="@dimen/dimen_20dp"
         android:layout_marginHorizontal="@dimen/dimen_10dp"
+        android:layout_marginVertical="@dimen/dimen_20dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textAlignment="textStart"
+        android:textColor="@color/color_gray"
+        android:textSize="@dimen/dimen_24sp"
+        android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgRestaurant" />
-
+        app:layout_constraintTop_toBottomOf="@+id/imgMeal"
+        tools:text="Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusant doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis." />
 </androidx.constraintlayout.widget.ConstraintLayout>

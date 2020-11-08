@@ -44,6 +44,19 @@
     <fragment
         android:id="@+id/restaurantsListFragment"
         android:name="com.klossteles.desafioandroid.restaurantlist.view.RestaurantsListFragment"
-        android:label="fragment_restaurants_list"
-        tools:layout="@layout/fragment_restaurants_list" />
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_restaurants_list" >
+        <action
+            android:id="@+id/action_restaurantsListFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantFragment"
+        android:name="com.klossteles.desafioandroid.restaurant.view.RestaurantFragment"
+        android:label="fragment_restaurant"
+        tools:layout="@layout/fragment_restaurant" >
+        <action
+            android:id="@+id/action_restaurantFragment_to_restaurantsListFragment"
+            app:destination="@id/restaurantsListFragment" />
+    </fragment>
 </navigation>

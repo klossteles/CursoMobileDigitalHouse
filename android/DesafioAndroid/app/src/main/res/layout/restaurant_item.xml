@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_margin="10dp"
-    app:cardCornerRadius="10dp">
+    android:layout_margin="@dimen/dimen_10dp"
+    app:cardCornerRadius="@dimen/dimen_10dp">
     
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -14,10 +14,10 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/imgRestaurant"
+            android:id="@+id/imgRestaurantItem"
             android:layout_width="match_parent"
-            android:layout_height="194dp"
-            android:contentDescription="RestaurantImage"
+            android:layout_height="@dimen/dimen_200dp"
+            android:contentDescription="@string/restaurant_image"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -31,11 +31,11 @@
             android:orientation="vertical"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imgRestaurant"
+            app:layout_constraintTop_toBottomOf="@+id/imgRestaurantItem"
             android:padding="16dp">
 
             <TextView
-                android:id="@+id/txtRestaurantName"
+                android:id="@+id/txtRestaurantItemName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?attr/textAppearanceHeadline6"
@@ -51,7 +51,7 @@
                 android:textAppearance="?attr/textAppearanceBody2"
                 android:textColor="?android:attr/textColorSecondary"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/txtRestaurantName"
+                app:layout_constraintTop_toBottomOf="@id/txtRestaurantItemName"
                 tools:text="Av. Lavandisca, 717 - Indianópolis, São Paulo" />
 
             <TextView

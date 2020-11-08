@@ -2,6 +2,7 @@ package com.klossteles.desafioandroid.restaurantlist.view
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.klossteles.desafioandroid.R
 import com.klossteles.desafioandroid.restaurant.model.RestaurantModel
@@ -17,6 +18,7 @@ class RestaurantListAdapter(private val dataset: List<RestaurantModel>, private 
     override fun onBindViewHolder(holder: RestaurantListViewHolder, position: Int) {
         val item = dataset[position]
         holder.bind(item)
+        holder.itemView.setOnClickListener { listener(item) }
     }
 
     override fun getItemCount() = dataset.size
