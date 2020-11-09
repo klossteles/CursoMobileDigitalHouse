@@ -22,15 +22,6 @@ class RestaurantsListFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel = ViewModelProvider(this,
-            RestaurantListViewModel.ListRestaurantListViewModelFactory(RestaurantRepository())
-        ).get(RestaurantListViewModel::class.java)
-
-        viewModel.restaurants.observe(this, Observer {
-            createList(it)
-        })
-
-        viewModel.getList()
     }
 
     fun createList(restaurants: List<RestaurantModel>) {
@@ -55,6 +46,15 @@ class RestaurantsListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         minhaView = inflater.inflate(R.layout.fragment_restaurants_list, container, false)
+        viewModel = ViewModelProvider(this,
+            RestaurantListViewModel.ListRestaurantListViewModelFactory(RestaurantRepository())
+        ).get(RestaurantListViewModel::class.java)
+
+        viewModel.restaurants.observe(this, Observer {
+            createList(it)
+        })
+
+        viewModel.getList()
         return minhaView
     }
 
