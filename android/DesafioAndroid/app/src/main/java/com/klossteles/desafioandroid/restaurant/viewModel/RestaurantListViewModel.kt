@@ -17,7 +17,7 @@ class RestaurantListViewModel(
         }
     }
 
-    class ListTodoListViewModelFactory(
+    class ListRestaurantListViewModelFactory(
         private val repository: RestaurantRepository
     ): ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {

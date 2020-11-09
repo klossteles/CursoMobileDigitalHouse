@@ -23,7 +23,7 @@ class RestaurantsListFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProvider(this,
-            RestaurantListViewModel.ListTodoListViewModelFactory(RestaurantRepository())
+            RestaurantListViewModel.ListRestaurantListViewModelFactory(RestaurantRepository())
         ).get(RestaurantListViewModel::class.java)
 
         viewModel.restaurants.observe(this, Observer {

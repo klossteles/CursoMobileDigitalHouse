@@ -48,16 +48,36 @@
         android:label="@string/app_name" >
         <action
             android:id="@+id/action_restaurantsListFragment_to_restaurantFragment"
-            app:destination="@id/restaurantFragment" />
+            app:destination="@id/restaurantFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
     </fragment>
     <fragment
         android:id="@+id/restaurantFragment"
         android:name="com.klossteles.desafioandroid.restaurant.view.RestaurantFragment"
-        android:label="fragment_restaurant"
         tools:layout="@layout/fragment_restaurant" >
         <action
             android:id="@+id/action_restaurantFragment_to_restaurantsListFragment"
             app:destination="@id/restaurantsListFragment"
+            app:enterAnim="@anim/from_left"
+            app:exitAnim="@anim/to_right" />
+        <action
+            android:id="@+id/action_restaurantFragment_to_mealFragment"
+            app:destination="@id/mealFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/mealFragment"
+        android:name="com.klossteles.desafioandroid.meal.view.MealFragment"
+        tools:layout="@layout/fragment_meal" >
+        <action
+            android:id="@+id/action_mealFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment"
             app:enterAnim="@anim/from_left"
             app:exitAnim="@anim/to_right" />
     </fragment>

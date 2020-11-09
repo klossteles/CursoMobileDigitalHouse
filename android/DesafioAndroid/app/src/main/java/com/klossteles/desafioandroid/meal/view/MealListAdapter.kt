@@ -16,6 +16,7 @@ class MealListAdapter(private val dataset: List<MealModel>, private val listener
     override fun onBindViewHolder(holder: MealListViewHolder, position: Int) {
         val item = dataset[position]
         holder.bind(item)
+        holder.itemView.setOnClickListener { listener(item) }
     }
 
     override fun getItemCount() = dataset.size
