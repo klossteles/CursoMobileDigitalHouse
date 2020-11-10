@@ -18,4 +18,5 @@
     <string name="meal_image">Meal image</string>
     <string name="restaurant_image">Restaurant Image</string>
     <string name="principal_meals">Pratos principais</string>
+    <string name="splash_screen_image">Splash screen image</string>
 </resources>
