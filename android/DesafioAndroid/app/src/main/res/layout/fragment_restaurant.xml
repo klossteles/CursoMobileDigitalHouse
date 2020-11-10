@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
     <androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:context=".restaurant.view.RestaurantFragment">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/imgRestaurant"
@@ -27,34 +25,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:fontFamily="@font/roboto_medium"
             android:textColor="@color/color_white"
             android:textSize="@dimen/dimen_36sp"
-            android:layout_marginBottom="@dimen/dimen_10dp"
             app:layout_constraintBottom_toBottomOf="@id/imgRestaurant"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:fontFamily="@font/roboto_medium"
             tools:text="Tony Roma's" />
 
         <TextView
             android:id="@+id/txtPrincipalMeals"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dimen_10dp"
+            android:layout_marginVertical="@dimen/dimen_20dp"
             android:text="@string/principal_meals"
             android:textColor="@color/color_dark_gray"
             android:textSize="@dimen/dimen_36sp"
-            android:layout_marginVertical="@dimen/dimen_20dp"
-            android:layout_marginHorizontal="@dimen/dimen_10dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imgRestaurant" />
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mealList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dimen_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPrincipalMeals"
+            tools:listitem="@layout/fragment_meal_item" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <FrameLayout
-        android:id="@+id/mealListFragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dimen_20dp"
-        android:layout_weight="1"/>
-</LinearLayout>
+</ScrollView>

@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/imgMealList"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dimen_200dp"
+            android:layout_height="@dimen/dimen_100dp"
             android:contentDescription="@string/meal_image"
             android:scaleType="centerCrop"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
             android:layout_marginVertical="@dimen/dimen_10dp"
             android:textAlignment="center"
             android:textColor="@color/color_dark_gray"
-            android:textSize="@dimen/dimen_24dp"
+            android:textSize="@dimen/dimen_24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/imgMealList"

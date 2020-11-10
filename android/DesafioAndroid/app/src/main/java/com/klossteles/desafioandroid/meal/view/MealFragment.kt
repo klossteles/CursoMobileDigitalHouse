@@ -20,17 +20,4 @@ class MealFragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_meal, container, false)
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        view.findViewById<TextView>(R.id.txtMealName).text = arguments?.getString(
-            MealListFragment.MEAL_NAME)
-        val mealImage = arguments?.getInt(MealListFragment.MEAL_IMG_ID)
-        if (mealImage != null) {
-            val imageDrawable = ContextCompat.getDrawable(view.context, mealImage)
-            view.findViewById<ImageView>(R.id.imgMeal).setImageDrawable(imageDrawable)
-        }
-        view.findViewById<TextView>(R.id.txtDescriptionMeal).text = arguments?.getString(MealListFragment.MEAL_DESCRIPTION)
-    }
 }
