@@ -76,10 +76,6 @@ class LoginFragment : Fragment() {
             view.findViewById<TextInputLayout>(R.id.txtPasswordLogin).error =
                 getString(R.string.password_cannot_be_null)
             isOk = false
-        } else if (password.length < 6) {
-            view.findViewById<TextInputLayout>(R.id.txtPasswordLogin).error =
-                getString(R.string.must_contain_at_least_6_characters)
-            isOk = false
         }
         return isOk
     }

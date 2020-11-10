@@ -56,16 +56,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/txtPasswordLogin"/>
 
-    <TextView
-        android:id="@+id/txtOr"
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
         android:layout_marginTop="@dimen/dimen_24dp"
-        android:gravity="center"
-        android:text="@string/or"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@id/btnLogin">
+
+        <TextView
+            android:id="@+id/txtOr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            android:layout_marginEnd="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:text="@string/or" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/txtOr"
+            android:background="@color/color_gray" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/txtOr"
+            android:background="@color/color_gray" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/btnRegisterLogin"
@@ -76,5 +100,5 @@
         android:text="@string/register"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txtOr" />
+        app:layout_constraintTop_toBottomOf="@id/relativeLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
