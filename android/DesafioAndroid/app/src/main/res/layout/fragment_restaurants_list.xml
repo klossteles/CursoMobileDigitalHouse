@@ -7,6 +7,25 @@
     android:background="@color/color_light_gray"
     tools:context=".restaurant.view.RestaurantsListFragment">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="@dimen/dimen_20sp"
+            android:textColor="@color/color_white"/>
+    </androidx.appcompat.widget.Toolbar>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/restaurantList"
         android:layout_width="match_parent"
