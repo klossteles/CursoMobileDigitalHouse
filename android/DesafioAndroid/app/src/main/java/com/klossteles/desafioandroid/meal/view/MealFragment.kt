@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import com.klossteles.desafioandroid.R
 import com.klossteles.desafioandroid.restaurant.view.RestaurantFragment
 
@@ -31,5 +32,14 @@ class MealFragment : Fragment() {
             view.findViewById<ImageView>(R.id.imgMeal).setImageDrawable(imageDrawable)
         }
         view.findViewById<TextView>(R.id.txtDescriptionMeal).text = arguments?.getString(RestaurantFragment.MEAL_DESCRIPTION)
+
+        setBackNavigation(view)
+    }
+
+    private fun setBackNavigation(view: View) {
+        view.findViewById<ImageView>(R.id.imgBackMeal).setOnClickListener {
+            val navController = findNavController()
+            navController.navigateUp()
+        }
     }
 }
