@@ -8,6 +8,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
+import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
@@ -29,6 +31,14 @@ class RegisterFragment : Fragment() {
         checkEmailChanged(view)
         checkPasswordChanged(view)
         checkRepeatPasswordChanged(view)
+        setBackNavigation(view)
+    }
+
+    private fun setBackNavigation(view: View) {
+        view.findViewById<ImageView>(R.id.imgBackRegister).setOnClickListener {
+            val navController = findNavController()
+            navController.navigateUp()
+        }
     }
 
     private fun register(view: View) {

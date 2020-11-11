@@ -28,7 +28,9 @@
             android:id="@+id/action_registerFragment_to_loginFragment"
             app:destination="@id/loginFragment"
             app:enterAnim="@anim/from_left"
-            app:exitAnim="@anim/to_right" />
+            app:exitAnim="@anim/to_right"
+            app:popUpToInclusive="true"
+            app:popUpTo="@+id/loginFragment"/>
         <action
             android:id="@+id/action_registerFragment_to_restaurantsListFragment"
             app:destination="@id/restaurantsListFragment"
@@ -54,7 +56,9 @@
             android:id="@+id/action_restaurantFragment_to_restaurantsListFragment"
             app:destination="@id/restaurantsListFragment"
             app:enterAnim="@anim/from_left"
-            app:exitAnim="@anim/to_right" />
+            app:exitAnim="@anim/to_right"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/restaurantsListFragment"/>
         <action
             android:id="@+id/action_restaurantFragment_to_mealFragment"
             app:destination="@id/mealFragment"
@@ -69,6 +73,8 @@
             android:id="@+id/action_mealFragment_to_restaurantFragment"
             app:destination="@id/restaurantFragment"
             app:enterAnim="@anim/from_left"
-            app:exitAnim="@anim/to_right" />
+            app:exitAnim="@anim/to_right"
+            app:popUpTo="@layout/restaurant_item"
+            app:popUpToInclusive="true"/>
     </fragment>
 </navigation>
