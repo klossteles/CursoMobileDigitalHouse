@@ -21,7 +21,7 @@
             tools:srcCompat="@drawable/meal" />
 
         <ImageView
-            android:id="@+id/imgViewBackRestaurant"
+            android:id="@+id/imgBackRestaurant"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/back"

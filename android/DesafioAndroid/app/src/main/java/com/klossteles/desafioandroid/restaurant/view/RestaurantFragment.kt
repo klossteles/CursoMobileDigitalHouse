@@ -13,6 +13,7 @@ import androidx.core.os.bundleOf
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.klossteles.desafioandroid.R
@@ -55,6 +56,8 @@ class RestaurantFragment : Fragment() {
         })
 
         viewModel.getList()
+
+        setBackNavigation(view)
     }
 
     fun createList(meals: List<MealModel>) {
@@ -70,6 +73,13 @@ class RestaurantFragment : Fragment() {
             setHasFixedSize(true)
             layoutManager = manager
             adapter = customAdapter
+        }
+    }
+
+    private fun setBackNavigation(view: View) {
+        view.findViewById<ImageView>(R.id.imgBackRestaurant).setOnClickListener {
+            val navController = findNavController()
+            navController.navigateUp()
         }
     }
 
