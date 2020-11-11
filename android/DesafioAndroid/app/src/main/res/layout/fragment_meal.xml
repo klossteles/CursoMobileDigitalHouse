@@ -18,6 +18,18 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@drawable/meal" />
 
+    <ImageView
+        android:id="@+id/imgViewBackMeal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/color_white" />
+
     <TextView
         android:id="@+id/txtMealName"
         android:layout_width="match_parent"
@@ -26,6 +38,7 @@
         android:textColor="@color/color_white"
         android:textSize="@dimen/dimen_30sp"
         android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginStart="@dimen/dimen_20dp"
         app:layout_constraintBottom_toBottomOf="@id/imgMeal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
