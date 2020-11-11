@@ -24,16 +24,21 @@ class MealFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setMealValues(view)
+        setBackNavigation(view)
+    }
+
+    private fun setMealValues(view: View) {
         view.findViewById<TextView>(R.id.txtMealName).text = arguments?.getString(
-            RestaurantFragment.MEAL_NAME)
+            RestaurantFragment.MEAL_NAME
+        )
         val mealImage = arguments?.getInt(RestaurantFragment.MEAL_IMG_ID)
         if (mealImage != null) {
             val imageDrawable = ContextCompat.getDrawable(view.context, mealImage)
             view.findViewById<ImageView>(R.id.imgMeal).setImageDrawable(imageDrawable)
         }
-        view.findViewById<TextView>(R.id.txtDescriptionMeal).text = arguments?.getString(RestaurantFragment.MEAL_DESCRIPTION)
-
-        setBackNavigation(view)
+        view.findViewById<TextView>(R.id.txtDescriptionMeal).text =
+            arguments?.getString(RestaurantFragment.MEAL_DESCRIPTION)
     }
 
     private fun setBackNavigation(view: View) {

@@ -40,13 +40,8 @@ class RestaurantFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        view.findViewById<TextView>(R.id.txtRestaurantName).text = arguments?.getString(
-            RestaurantsListFragment.RESTAURANT_NAME)
-        val restaurantImage = arguments?.getInt(RestaurantsListFragment.RESTAURANT_IMAGE)
-        if (restaurantImage != null) {
-            val imageDrawable = ContextCompat.getDrawable(view.context, restaurantImage)
-            view.findViewById<ImageView>(R.id.imgRestaurant).setImageDrawable(imageDrawable)
-        }
+        setRestaurantValues(view)
+        setBackNavigation(view)
         viewModel = ViewModelProvider(this,
             MealListViewModel.ListMealViewModelFactory(MealRepository())
         ).get(MealListViewModel::class.java)
@@ -56,8 +51,17 @@ class RestaurantFragment : Fragment() {
         })
 
         viewModel.getList()
+    }
 
-        setBackNavigation(view)
+    private fun setRestaurantValues(view: View) {
+        view.findViewById<TextView>(R.id.txtRestaurantName).text = arguments?.getString(
+            RestaurantsListFragment.RESTAURANT_NAME
+        )
+        val restaurantImage = arguments?.getInt(RestaurantsListFragment.RESTAURANT_IMAGE)
+        if (restaurantImage != null) {
+            val imageDrawable = ContextCompat.getDrawable(view.context, restaurantImage)
+            view.findViewById<ImageView>(R.id.imgRestaurant).setImageDrawable(imageDrawable)
+        }
     }
 
     fun createList(meals: List<MealModel>) {
