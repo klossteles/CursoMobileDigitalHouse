@@ -9,11 +9,11 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class CharacterRepository {
-    fun getList(onResult: IOnResult<ResponseModel<CharacterModel>>) {
+    fun getList(name: String?, onResult: IOnResult<ResponseModel<CharacterModel>>) {
         val client = NetworkUtils.getRetrofitInstance()
         val api = client.create(ICharacterEndpoint::class.java)
 
-        api.getCharacters().enqueue(object: Callback<ResponseModel<CharacterModel>> {
+        api.getCharacters(name).enqueue(object: Callback<ResponseModel<CharacterModel>> {
             override fun onResponse(
                 call: Call<ResponseModel<CharacterModel>>,
                 response: Response<ResponseModel<CharacterModel>>
@@ -24,8 +24,6 @@ class CharacterRepository {
             override fun onFailure(call: Call<ResponseModel<CharacterModel>>, t: Throwable) {
                 TODO("Not yet implemented")
             }
-
         })
-
     }
 }

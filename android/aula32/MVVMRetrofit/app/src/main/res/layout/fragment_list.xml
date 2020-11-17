@@ -7,14 +7,25 @@
     tools:context=".list.view.ListFragment"
     android:background="@color/colorPrimary">
 
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:elevation="2dp"
+        android:layout_margin="@dimen/dimen_15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="@dimen/dimen_0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
         tools:listitem="@layout/card_list_item" />
 
     <LinearLayout
@@ -57,7 +68,7 @@
             android:layout_marginTop="15dp"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:textColor="#fff"
+            android:textColor="@color/color_white"
             android:text="@string/ops_not_found"/>
     </LinearLayout>
 

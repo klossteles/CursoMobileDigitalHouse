@@ -11,10 +11,11 @@ import com.klossteles.mvvmretrofit.list.repository.CharacterRepository
 class CharacterViewModel(
     private val repository: CharacterRepository
 ): ViewModel() {
-    val characters = MutableLiveData<List<CharacterModel>>()
+    var characters = MutableLiveData<List<CharacterModel>>()
+    private var firstList = listOf<CharacterModel>()
 
-    fun getList() {
-        repository.getList(object: IOnResult<ResponseModel<CharacterModel>>{
+    fun getList(name: String? = null) {
+        repository.getList(name, object: IOnResult<ResponseModel<CharacterModel>>{
             override fun onSuccess(result: ResponseModel<CharacterModel>) {
                 characters.value = result.results
             }
@@ -23,6 +24,17 @@ class CharacterViewModel(
                 TODO("Not yet implemented")
             }
         })
+    }
+
+    fun search(name: String?) {
+        if (firstList.isEmpty()) {
+            firstList = characters.value!!
+        }
+        getList(name)
+    }
+
+    fun returnFirstList() {
+        characters.value = firstList.toMutableList()
     }
 
     class CharacterViewModelFactory(private val repository: CharacterRepository): ViewModelProvider.Factory {
