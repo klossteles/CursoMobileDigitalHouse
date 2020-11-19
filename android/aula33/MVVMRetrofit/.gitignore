@@ -1,0 +1,14 @@
+*.iml
+.gradle
+/local.properties
+/MVVMRetrofit/.idea/caches
+/MVVMRetrofit/.idea/libraries
+/MVVMRetrofit/.idea/modules.xml
+/MVVMRetrofit/.idea/workspace.xml
+/MVVMRetrofit/.idea/navEditor.xml
+/MVVMRetrofit/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx

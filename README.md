@@ -37,3 +37,4 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula31** - Web Services  
 - **Aula32** - Web Services II
 - **Aula33** - Threads  
+- **Aula34** - Pagination  
