@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/categoryListFragment">
+
+    <fragment
+        android:id="@+id/categoryListFragment"
+        android:name="com.klossteles.chucknorrisapi.category.view.CategoryListFragment"
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_categoryListFragment_to_jokeFragment"
+            app:destination="@id/jokeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jokeFragment"
+        android:name="com.klossteles.chucknorrisapi.joke.view.JokeFragment"
+        android:label="JokeFragment" >
+        <action
+            android:id="@+id/action_jokeFragment_to_categoryListFragment"
+            app:destination="@id/categoryListFragment" />
+    </fragment>
+</navigation>

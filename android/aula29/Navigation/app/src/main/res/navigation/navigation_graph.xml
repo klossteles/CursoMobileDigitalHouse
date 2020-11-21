@@ -17,7 +17,6 @@
             app:exitAnim="@anim/to_left"
             app:popEnterAnim="@anim/from_left"
             app:popExitAnim="@anim/to_left"
-
             />
         <action
             android:id="@+id/action_mainFragment_to_testeActivity"
@@ -25,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/detalheFragment"
-        android:name="com.digitalhouse.aula29navigation.DetalheFragment"
+        android:name="com.klossteles.navigation.DetalheFragment"
         android:label="fragment_detalhe"
         tools:layout="@layout/fragment_detalhe" >
         <action
@@ -39,7 +38,7 @@
         tools:layout="@layout/fragment_segundo" />
     <fragment
         android:id="@+id/azulFragment"
-        android:name="com.digitalhouse.aula29navigation.AzulFragment"
+        android:name="com.klossteles.navigation.AzulFragment"
         android:label="fragment_azul"
         tools:layout="@layout/fragment_azul" />
     <activity
