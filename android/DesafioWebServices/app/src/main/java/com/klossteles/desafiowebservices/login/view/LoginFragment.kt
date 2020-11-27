@@ -46,7 +46,7 @@ class LoginFragment : Fragment() {
             success = checkPassword(password, view, success)
             if (success) {
                 val navController = findNavController()
-//                navController.navigate(R.id.action_loginFragment_to_restaurantsListFragment)
+                navController.navigate(R.id.action_loginFragment_to_comicListFragment)
             }
         }
     }
