@@ -7,21 +7,24 @@ import java.security.MessageDigest
 
 class NetworkInterceptor : Interceptor {
     override fun intercept(chain: Interceptor.Chain): Response {
-        var request = chain.request()
         val ts = System.currentTimeMillis().toString()
         val apikey = PUBLIC_KEY
 
-        val httpUrl = request.url().newBuilder()
+        var request = chain.request()
+        val originalHttpUrl = request.url();
+
+        val url = originalHttpUrl.newBuilder()
             .addQueryParameter(TS, ts)
             .addQueryParameter(API_KEY, apikey)
             .addQueryParameter(HASH, getHash(ts))
             .build()
 
-        request = request.newBuilder().url(httpUrl).build()
+        val requestBuilder = request.newBuilder().url(url)
+        request = requestBuilder.build()
         return chain.proceed(request)
     }
 
-    fun getHash(ts: String) = "${ts}$PRIVATE_KEY$PUBLIC_KEY".md5
+    private fun getHash(ts: String) = "${ts}$PRIVATE_KEY$PUBLIC_KEY".md5
 
     private val String.md5: String
         get() {

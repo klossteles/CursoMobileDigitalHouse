@@ -34,11 +34,6 @@ class ComicViewModel (
         }
     }
 
-    fun getComicsById(seriesId: Int) = liveData(Dispatchers.IO) {
-        val response = _repository.getComicById(seriesId)
-        emit(response.data.results[0])
-    }
-
     class ComicViewModelFactory(private val _repository: ComicRepository): ViewModelProvider.Factory {
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
             return ComicViewModel(_repository) as T
