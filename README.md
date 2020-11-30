@@ -39,3 +39,6 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula33** - Threads  
 - **Aula34** - Pagination  
 - **Aula35** - Chuck Norris Api
+- **Aula36** - Revisão Web Services  
+- **Aula37** - Projeto Integrador  
+- **Aula38** - Introdução a Banco de Dados
