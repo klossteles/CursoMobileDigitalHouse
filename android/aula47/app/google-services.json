@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "281728415174",
+    "project_id": "aula47-crashlytics",
+    "storage_bucket": "aula47-crashlytics.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281728415174:android:87728befb42670b651eec7",
+        "android_client_info": {
+          "package_name": "com.klossteles.crashlytics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281728415174-nkltn53cpj231tthf7efk7fd6d3ddttm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCo8BEyi5frT2urNYseGaCL18iChEWaBjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281728415174-nkltn53cpj231tthf7efk7fd6d3ddttm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

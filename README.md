@@ -42,4 +42,12 @@ Atividades desenvolvidas durante o curso de desenvolvimento mobile da Digital Ho
 - **Aula36** - Revisão Web Services  
 - **Aula37** - Projeto Integrador  
 - **Aula38** - Introdução a Banco de Dados  
-- **Aula39** - Banco de Dados Room
+- **Aula39** - Banco de Dados Room  
+- **Aula40** - Room MVVM  
+- **Aula41** - Shared Preferences  
+- **Aula42** - Projeto Integrador  
+- **Aula43** - Login Facebook
+- **Aula45** - Login Google
+- **Aula46** - RealTime Database/Storage    
+- **Aula47** - Crashlytics/Cloud Messaging  
+- **Aula48** - Teste UI  

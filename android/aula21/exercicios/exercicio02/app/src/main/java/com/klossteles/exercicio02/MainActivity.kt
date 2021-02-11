@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity(), IClick {
         } else {
             val age = currentYear.minus(birthYear.toInt())
             val text = resources.getQuantityString(R.plurals.nameAndYear, age, age, name);
-            fragmentB.changeText(text)
+                fragmentB.changeText(text)
         }
     }
 
